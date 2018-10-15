@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1939DB99217374FA001840C4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1939DB98217374FA001840C4 /* main.swift */; };
+		1939DBA6217388C4001840C4 /* CommandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1939DBA5217388C4001840C4 /* CommandTests.swift */; };
+		1939DBAB217388CE001840C4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1939DB98217374FA001840C4 /* main.swift */; };
+		1939DBAD21738A9D001840C4 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1939DBAC21738A9D001840C4 /* Command.swift */; };
+		1939DBAE21738AC4001840C4 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1939DBAC21738A9D001840C4 /* Command.swift */; };
+		1939DBB02173948A001840C4 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1939DBAF2173948A001840C4 /* String+Regex.swift */; };
+		1939DBB12173948A001840C4 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1939DBAF2173948A001840C4 /* String+Regex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +31,22 @@
 /* Begin PBXFileReference section */
 		1939DB95217374FA001840C4 /* VMTranslator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VMTranslator; sourceTree = BUILT_PRODUCTS_DIR; };
 		1939DB98217374FA001840C4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1939DBA3217388C4001840C4 /* VMTranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMTranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1939DBA5217388C4001840C4 /* CommandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandTests.swift; sourceTree = "<group>"; };
+		1939DBA7217388C4001840C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1939DBAC21738A9D001840C4 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		1939DBAF2173948A001840C4 /* String+Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Regex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1939DB92217374FA001840C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1939DBA0217388C4001840C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				1939DB97217374FA001840C4 /* VMTranslator */,
+				1939DBA4217388C4001840C4 /* VMTranslatorTests */,
 				1939DB96217374FA001840C4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				1939DB95217374FA001840C4 /* VMTranslator */,
+				1939DBA3217388C4001840C4 /* VMTranslatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +78,19 @@
 			isa = PBXGroup;
 			children = (
 				1939DB98217374FA001840C4 /* main.swift */,
+				1939DBAC21738A9D001840C4 /* Command.swift */,
+				1939DBAF2173948A001840C4 /* String+Regex.swift */,
 			);
 			path = VMTranslator;
+			sourceTree = "<group>";
+		};
+		1939DBA4217388C4001840C4 /* VMTranslatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				1939DBA5217388C4001840C4 /* CommandTests.swift */,
+				1939DBA7217388C4001840C4 /* Info.plist */,
+			);
+			path = VMTranslatorTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +113,23 @@
 			productReference = 1939DB95217374FA001840C4 /* VMTranslator */;
 			productType = "com.apple.product-type.tool";
 		};
+		1939DBA2217388C4001840C4 /* VMTranslatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1939DBA8217388C4001840C4 /* Build configuration list for PBXNativeTarget "VMTranslatorTests" */;
+			buildPhases = (
+				1939DB9F217388C4001840C4 /* Sources */,
+				1939DBA0217388C4001840C4 /* Frameworks */,
+				1939DBA1217388C4001840C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VMTranslatorTests;
+			productName = VMTranslatorTests;
+			productReference = 1939DBA3217388C4001840C4 /* VMTranslatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +141,9 @@
 				ORGANIZATIONNAME = me;
 				TargetAttributes = {
 					1939DB94217374FA001840C4 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					1939DBA2217388C4001840C4 = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
 				};
@@ -110,9 +161,20 @@
 			projectRoot = "";
 			targets = (
 				1939DB94217374FA001840C4 /* VMTranslator */,
+				1939DBA2217388C4001840C4 /* VMTranslatorTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1939DBA1217388C4001840C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1939DB91217374FA001840C4 /* Sources */ = {
@@ -120,6 +182,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				1939DB99217374FA001840C4 /* main.swift in Sources */,
+				1939DBAD21738A9D001840C4 /* Command.swift in Sources */,
+				1939DBB02173948A001840C4 /* String+Regex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1939DB9F217388C4001840C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1939DBAB217388CE001840C4 /* main.swift in Sources */,
+				1939DBA6217388C4001840C4 /* CommandTests.swift in Sources */,
+				1939DBB12173948A001840C4 /* String+Regex.swift in Sources */,
+				1939DBAE21738AC4001840C4 /* Command.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +332,40 @@
 			};
 			name = Release;
 		};
+		1939DBA9217388C4001840C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VMTranslatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.VMTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		1939DBAA217388C4001840C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VMTranslatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.VMTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -274,6 +383,15 @@
 			buildConfigurations = (
 				1939DB9D217374FA001840C4 /* Debug */,
 				1939DB9E217374FA001840C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1939DBA8217388C4001840C4 /* Build configuration list for PBXNativeTarget "VMTranslatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1939DBA9217388C4001840C4 /* Debug */,
+				1939DBAA217388C4001840C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
